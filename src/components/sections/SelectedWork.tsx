@@ -183,8 +183,8 @@ function SelectedWork() {
           </div>
         </article>
 
-        <article data-reveal className="mt-16 border-t border-line pt-16 sm:mt-20 sm:pt-20 lg:mt-24 lg:pt-24">
-          <div className="grid items-start gap-6 lg:grid-cols-2 lg:gap-12">
+        <article data-reveal className="mt-16 flex flex-col border-t border-line pt-16 sm:mt-20 sm:pt-20 lg:mt-24 lg:block lg:pt-24">
+          <div className="mt-8 grid items-start gap-6 sm:mt-10 lg:mt-0 lg:grid-cols-2 lg:gap-12">
             <div className="min-w-0">
               <p className="project-number font-mono text-xs text-muted">03</p>
               <h3 className="mt-3 text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
@@ -215,7 +215,7 @@ function SelectedWork() {
             </div>
           </div>
 
-          <div className="mt-8 grid items-start gap-6 sm:mt-10 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
+          <div className="order-first grid items-start gap-6 lg:order-none lg:mt-10 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
             <div className="min-w-0 project-hover overflow-hidden rounded-2xl border border-line bg-surface shadow-sm">
               <img
                 src="/projects/employee-management/employees.png"
